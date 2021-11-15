@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BookStore - Commande</title>
+</head>
+<body>
+  <!-- Début de l'entête-->
+  <header>
+
+    <a href="index.html">
+      <img src="./assets/img/logo.svg" alt="Le logo de l'entreprise" >
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="products.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shopping-cart.html">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fin de l'entête-->
+  <!-- Début du content-->
+  <main>
+    <h1>Commande</h1>
+    <form action="confirmation.html" >
+      <section>
+        <h3>Contact</h3>
+
+        <label>Prénom:   <input id="first-name" type="text" required /> </label><br>
+        <label>Nom:   <input id="last-name" type="text" required /> </label><br>
+        <label>Adresse courrier:   <input id="email" type="email" required /> </label><br>
+        <label>Numéro de téléphone:   <input id="phone" type="tel" required /> </label>
+
+      </section>
+      <section>
+        <h3>Paiement</h3>
+
+        <label>Numéro de la carte de crédit:   <input id="credit-card" type="number" required /> </label><br>
+        <label>Nom:   <input id="credit-card-expiry" type="date" required /> </label><br>
+        <button type="submit">Payer</button>
+      </section>
+    </form>
+  </main>
+  <!-- Fin du content-->
+  <!-- Début du footer-->
+  <footer>
+    <p>
+    Copyright &copy; 2021 - BookStore - BMWebDesigner
+    </p>
+  </footer>
+  <!-- Fin du footer -->
+</body>
+</body>
+</html>
