@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
   <header>
@@ -14,7 +16,15 @@
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./products.html">Produits</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./shopping-cart.html">Panier</a></li>
+        <li>
+          <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <span class="count">3</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -33,31 +43,69 @@
         </thead>
         <tbody>
           <tr>
-            <td><button>X</button></td>
+            <td>
+              <button class="btn_cart">
+               X
+              </button>
+            </td>
             <td><a href="./product.html">Console Wii</a></td>
             <td>199,99&thinsp;$</td>
-            <td><button>-</button> 1 <button>+</button></td>
+            <td>
+              <button class="btn_cart">
+                -
+              </button>
+              1
+              <button class="btn_cart">
+               +
+              </button>
+            </td>
             <td>199,99&thinsp;$</td>
           </tr>
           <tr>
-            <td><button>X</button></td>
+            <td>
+              <button class="btn_cart">
+                X
+              </button>
+            </td>
             <td><a href="./product.html">Manette Xbox 360</a></td>
             <td>29,99&thinsp;$</td>
-            <td><button>-</button> 2 <button>+</button></td>
+            <td>
+              <button class="btn_cart">
+                -
+              </button>
+               2
+              <button class="btn_cart">
+                +
+              </button>
+            </td>
             <td>59,98&thinsp;$</td>
           </tr>
           <tr>
-            <td><button>X</button></td>
+            <td>
+              <button class="btn_cart">
+                X
+              </button>
+            </td>
             <td><a href="./product.html">Moniteur 19"</a></td>
             <td>149,99&thinsp;$</td>
-            <td><button>-</button> 3 <button>+</button></td>
+            <td>
+              <button class="btn_cart">
+                -
+              </button>
+              3
+              <button class="btn_cart">
+                +
+              </button>
+            </td>
             <td>449,97&thinsp;$</td>
           </tr>
         </tbody>
       </table>
-      <p>Total: <strong>704,94&thinsp;$</strong></p>
-      <button>Vider le panier</button>
-      <a href="./order.html">Commander</a>
+  <p class="float_right">Total: <strong>704,94&thinsp;$</strong></p>
+      <div class="pad-top-60">
+  <button class="float_left btn">Vider le panier</button>
+  <a class="float_right btn" href="./order.html">Commander</a>
+</div>
     </article>
   </main>
   <footer>

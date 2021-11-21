@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 <header>
@@ -12,38 +14,47 @@
   <nav>
     <ul>
       <li><a href="./index.html">Accueil</a></li>
-      <li><a href="./products.html">Produits</a></li>
+      <li><a class="active" href="./products.html">Produits</a></li>
       <li><a href="./contact.html">Contact</a></li>
-      <li><a href="./shopping-cart.html">Panier</a></li>
+      <li>
+        <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+          </span>
+          <span class="count">3</span>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 <main>
-  <section aria-label="Filtres">
+  <section aria-label="Filtres" class="left_sidebar">
     <section>
       <h2>Catégories</h2>
       <div id="product-categories">
-        <button>Appareils photo</button>
+        <button >Appareils photo</button>
         <button>Consoles</button>
         <button>Écrans</button>
         <button>Ordinateurs</button>
-        <button>Tous les produits</button>
+        <button class="selected">Tous les produits</button>
       </div>
     </section>
     <section>
       <h2>Classement</h2>
       <div id="product-criteria">
-        <button>Prix (bas-haut)</button>
-        <button>Prix (haut-bas)</button>
+        <button >Prix (bas-haut)</button>
+        <button class="selected">Prix (haut-bas)</button>
         <button>Nom (A-Z)</button>
         <button>Nom (Z-A)</button>
       </div>
     </section>
   </section>
-  <article>
+  <article class="content">
+    <div class="content_title">
     <h1>Produits</h1>
     <p>13 produits</p>
-
+  </div>
     <div id="products-list">
       <a href="./product.html" title="En savoir plus...">
         <h2>Manette Xbox 360</h2>

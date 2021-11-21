@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>OnlineShop - Commande</title>
-<body>
-  <header>
-    <a href="./index.html">
-      <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./products.html">Produits</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./shopping-cart.html">Panier</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article>
-      <h1>Commande</h1>
-      <form id="order-form" action="./confirmation.html" method="post">
-        <section>
-          <h2>Contact</h2>
-          <label for="first-name">Prénom</label>
-          <input id="first-name" name="first-name" type="text" placeholder="Prénom" required>
+  <head>
+    <meta charset="UTF-8">
+    <title>OnlineShop - Commande</title>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./products.html">Produits</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Commande</h1>
+        <form id="order-form" class="form_control" action="./confirmation.html" method="post">
+          <section>
+            <h2>Contact</h2>
+            <div class="col2 float_left ">
+              <label for="first-name">Prénom</label><br />
+              <input id="first-name" name="first-name" type="text" placeholder="Prénom" required><br />
+              <label for="email">Adresse courriel</label><br />
 
-          <label for="last-name">Nom</label>
-          <input id="last-name" name="last-name" type="text" placeholder="Nom" required>
+              <input id="email" name="email" type="email" placeholder="Adresse courriel" required>
 
-          <label for="email">Adresse courriel</label>
-          <input id="email" name="email" type="email" placeholder="Adresse courriel" required>
+            </div>
+            <div class="col2 float_right ">
 
-          <label for="phone">Téléphone</label>
-          <input id="phone" name="phone" type="tel" placeholder="###-###-####" required>
-        </section>
-        <section>
-          <h2>Paiement</h2>
-          <label for="credit-card">Numéro de carte de crédit</label>
-          <input id="credit-card" name="credit-card" type="text" placeholder="•••• •••• •••• ••••" required>
+              <label for="last-name">Nom</label><br />
+              <input id="last-name" name="last-name" type="text" placeholder="Nom" required><br />
 
-          <label for="credit-card-expiry">Expiration (mm/aa)</label>
-          <input id="credit-card-expiry" name="credit-card-expiry" type="text" placeholder="mm/aa" required>
-        </section>
-        <button type="submit">Payer</button>
-      </form>
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2020 BookStore</p>
-  </footer>
-</body>
+
+              <label for="phone">Téléphone</label><br />
+              <input id="phone" name="phone" type="tel" placeholder="###-###-####" required><br />
+            </div>
+          </section>
+          <section>
+            <h2 class="marg-top-150">Paiement</h2>
+            <div class="col2 float_left">
+              <label for="credit-card">Numéro de carte de crédit</label>
+              <input id="credit-card" name="credit-card" type="text" placeholder="•••• •••• •••• ••••" required>
+            </div>
+            <div class="col2 float_right">
+              <label for="credit-card-expiry">Expiration (mm/aa)</label>
+              <input id="credit-card-expiry" name="credit-card-expiry" type="text" placeholder="mm/aa" required>
+              </div>
+          </section>
+          <button class="btn float_right marg-top-60"type="submit">Payer</button>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2020 BookStore</p>
+    </footer>
+  </body>
 </html>
