@@ -73,7 +73,7 @@ function showProducts(jsonObj,tri) {
 function clearProductsList() {
     
 }
-
+//finir la liste par tri
 
 function productOrder(titi,tri) {
 
@@ -115,3 +115,18 @@ function productOrder(titi,tri) {
     
     return productsListTri;
 };
+
+function CreateStorage() {
+    localStorage.setItem("id", "2");
+
+}
+
+function CountCart() {
+    localStorage.setItem("id", "2");
+    var CountClass = document.querySelector('.count');
+    CountClass.textContent = localStorage.length +'';
+
+        
+
+   
+}
